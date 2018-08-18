@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Aida</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_start_service">启动悬浮窗（更新话术）</string>
+    <string name="action_stop_service">关闭悬浮窗</string>
+    <string name="speech_1">话术 1</string>
+    <string name="speech_2">话术 2</string>
+    <string name="speech_3">话术 3</string>
+    <string name="speech_4">话术 4</string>
+    <string name="speech_5">话术 5</string>
+    <string name="speech_empty_error">此处不可为空！</string>
+    <string name="speech_delay_max">最大消息间隔(s)</string>
+    <string name="speech_delay_min">最小消息间隔(s)</string>
+    <string name="ui_delay_max">最大脚本延迟(ms)</string>
+    <string name="ui_delay_min">最小脚本延迟(ms)</string>
+
+</resources>

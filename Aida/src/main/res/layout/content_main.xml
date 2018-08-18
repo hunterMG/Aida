@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/btn_start_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_start_service"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    <Button
+            android:id="@+id/btn_stop_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_stop_service"
+            app:layout_constraintTop_toBottomOf="@id/btn_start_service"
+            />
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn_stop_service"
+            android:id="@+id/tv_layout1">
+
+        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="@string/speech_1"
+                android:id="@+id/tv_speech_1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_layout1"
+            android:id="@+id/tv_layout2">
+
+        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="@string/speech_2"
+                android:id="@+id/tv_speech_2"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_layout2"
+            android:id="@+id/tv_layout3">
+
+        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="@string/speech_3"
+                android:id="@+id/tv_speech_3"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_layout3"
+            android:id="@+id/tv_layout4">
+
+        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="@string/speech_4"
+                android:id="@+id/tv_speech_4"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_layout4"
+            android:id="@+id/tv_layout5">
+
+        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="@string/speech_5"
+                android:id="@+id/tv_speech_5"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_layout_speechDelay1"
+            app:layout_constraintTop_toBottomOf="@id/tv_layout5">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/speech_delay_min"
+                android:id="@+id/tv_speech_daley_min"
+                android:inputType="number"
+                android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_layout_speechDelay2"
+            app:layout_constraintTop_toBottomOf="@id/tv_layout_speechDelay1">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/speech_delay_max"
+                android:id="@+id/tv_speech_daley_max"
+                android:inputType="number"
+                android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_layout_uiDelay1"
+            app:layout_constraintTop_toBottomOf="@id/tv_layout_speechDelay2">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ui_delay_min"
+                android:id="@+id/tv_ui_daley_min"
+                android:inputType="number"
+                android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_layout_uiDelay2"
+            app:layout_constraintTop_toBottomOf="@id/tv_layout_uiDelay1">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ui_delay_max"
+                android:id="@+id/tv_ui_daley_max"
+                android:inputType="number"
+                android:maxLines="1"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</android.support.constraint.ConstraintLayout>
